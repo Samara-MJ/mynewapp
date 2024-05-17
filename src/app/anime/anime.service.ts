@@ -11,7 +11,7 @@ export class AnimeService {
   //getAnimes() {
   //  throw new Error('Method not implemented.');
   //}
-  private apiUrl: string = environment.baseUrl + 'animes';
+  private apiUrl: string = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
   getAnimes(): Observable<Anime[]> {
